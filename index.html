@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>EveryVote</title>
+
+    <link href="bootstrap-3.2.0-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <!--<link href='http://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400italic,700italic,700,400' rel='stylesheet' type='text/css'>-->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+  <div class="ev-navbar-fixed">
+      <nav class="navbar navbar-default bg-dk-gry-gradient ev-navbar" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="xs-navbar-show-search" class="hidden-sm hidden-md hidden-lg">
+            <i class="fa fa-search"></i>
+          </div>
+          <div>
+            <input type="text" style="display:none" id="xs-navbar-search" class="form-control" placeholder="Search">
+          </div>
+          <a id="navbar-brand" class="navbar-brand" href="#"><img src="img/niu-huskies.jpg" /></a>
+          <a id="ev-navbar-brand" class="ev-navbar-brand" href="#">Student Association</a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown hidden-xs">
+            <a href="#" id="nav-person" data-toggle="dropdown"><img src="img/user.png" /></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Frederick Douglass</a></li>
+                <li><a href="#">Settings</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Sign out</a></li>
+              </ul>
+            </li>
+            <a id="nav-person-xs-image" class="hidden-sm hidden-md hidden-lg" href="#"><img src="img/user.png" /></a>
+            <a id="nav-person-xs-text" class="hidden-sm hidden-md hidden-lg" href="#">Frederick Douglass</a>
+            <a class="nav-option-xs-icon hidden-sm hidden-md hidden-lg" href="#"><i class="fa fa-gears"></i></a>
+            <a class="nav-option-xs-text hidden-sm hidden-md hidden-lg" href="#">Settings</a>
+            <a class="nav-option-xs-icon hidden-sm hidden-md hidden-lg" href="#"><i class="fa fa-sign-out"></i></a>
+            <a class="nav-option-xs-text hidden-sm hidden-md hidden-lg" href="#">Sign out</a>
+          </ul>
+          <form class="navbar-form navbar-right hidden-xs" role="search">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+          </form>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+      <div class="tab-bar-container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="tab-bar">
+              <ul class="tab-bar-left">
+                <li class="dropdown xs-tab-bar-show">
+  	              <a href="#" id="nav-person" data-toggle="dropdown">Groups</a>
+  	              <ul class="dropdown-menu" role="menu">
+  	                <li><a href="#">About</a></li>
+  	                <li><a href="#">Election</a></li>
+  	                <li><a href="#">Debate</a></li>
+  	              </ul>
+  	            </li>
+  	            <span class="xs-tab-bar-hidden">
+  		              <li class="tab-bar-left-first"><a href="">Groups</a></li>
+  		              <li><a href="">About</a></li>
+  		              <li><a href="">Election</a></li>
+  		              <li><a href="">Debate</a></li>
+  		          </span>
+	            </ul>
+	            <ul class="tab-bar-right">
+	              <li class="dropdown tab-bar-dropdown">
+  	              <a href="#" id="nav-more" data-toggle="dropdown"><span class="hidden-xs">More</span> <i class="fa fa-caret-down"></i></a>
+  	              <ul class="dropdown-menu more-dropdown-menu" role="menu">
+  	                <li><a href="#">About</a></li>
+  	                <li><a href="#">Election</a></li>
+  	                <li><a href="#">Debate</a></li>
+  	              </ul>
+	              </li>
+	              <li><a href="#"><i class="fa fa-share-square-o"></i> <span class="hidden-xs">Share</span></a></li>
+	              <li><a href="#"><i class="fa fa-share-alt"></i> <span class="hidden-xs">Connect</span></a></li>
+	              <li class="tab-bar-right-last"><a href=""></a></li>
+	            </ul>
+	          </div><!-- /.tab-bar -->
+	        </div><!-- /.col-md-9 -->
+	      </div><!-- /.row -->
+      </div><!-- /.tab-bar-container -->
+  </div><!-- /.ev-navbar-fixed -->
+    <div class="ev-body-indent">
+      <div class="row">
+      	<div class="col-md-9">
+          <div class="cover-img">
+            <h5>NIU > Student Association</h5>
+            <h1>Fall 2014 Session</h1>
+            <img src="img/shadow.png" class="img-responsive cover-img-shadow" />
+            <img src="img/niu.png" class="img-responsive" />
+          </div>
+          <div class="main-content">
+            <h2>Election</h2>
+            <p><b>Voting begins in 58 days and 6 hours</b></p>
+            <p>Voting Days: October 23 (9am-5pm), October 24 (7am-7pm), October 25 (9am-5pm)</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur lacinia mi, nec tincidunt eros. Aliquam nec sem aliquet, mattis nisi sit amet, fringilla arcu. Aenean egestas risus eu facilisis vulputate. Praesent rutrum mollis nisl, eget tempor turpis interdum ultricies. Cras imperdiet mi ut risus pellentesque porta.... <a href="#">show more</a></p>
+            <h2>Candidates</h2>
+            <p>Sort by: <a>random</a></p>
+            <div id="folder-1-bar" class="profile-folder-bar">
+              <h3><i id="folder-1-icon" class="fa fa-caret-right caret-width"></i>Executive Branch <span class="profile-folder-bar-number">14</span></h3>
+            </div>
+            <div id="folder-1" class="profile-folder display-none">
+              <div id="folder-1-1-bar" class="profile-folder-bar">
+                <h3><i id="folder-1-1-icon" class="fa fa-caret-right caret-width"></i>President <span class="profile-folder-bar-number">5</span></h3>
+              </div>
+              <div id="folder-1-1" class="profile-folder display-none">
+  	            <div class="profile clearfix">
+  	              <img src="img/user.png" />
+  	              <h4>Frederick Douglass</h4>
+  	              <hr>
+  	              <p><b>Independent</b></p>
+  	              <p class="profile-tagline"><em>“Without a struggle, there can be no progress. Without a struggle, there can be no progress.”</em></p>
+  	              <div class="profile-social">
+  	                <i class="fa fa-facebook-square"></i>
+  	                <i class="fa fa-twitter-square"></i>
+  	                <i class="fa fa-linkedin-square"></i>
+  	                <i class="fa fa-pinterest-square"></i>
+  	              </div>
+  	            </div><!-- /.profile -->
+  	          </div><!-- /.profile-folder -->
+            </div><!-- /.profile-folder -->
+          </div><!-- /.main-content -->
+  	    </div><!-- /.col-md-9 -->
+      </div><!-- /.row -->
+    </div><!-- /.ev-body-indent -->
+  <div class="ev-footer-container">
+      <div class="row">
+        <div class="col-sm-12">
+            <div class="ev-footer">
+                <a href="#" target="_blank"><img src="img/ev-brand.png" /></a>
+            </div>
+        </div>
+      </div>
+  </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+    <script src="js/base.js"></script>
+  </body>
+</html>
