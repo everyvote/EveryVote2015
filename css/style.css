@@ -144,6 +144,59 @@ ul, ol {
     font-weight:bold;
 }
 
+.ev-nav-group {
+    padding:4px 0;
+}
+
+.ev-nav-group, .ev-nav-group li, .ev-nav-group ul {
+    list-style:none !important;
+}
+
+.ev-nav-group li ul {
+    position:absolute;
+    display:none;
+    top:50px;
+    background-color:#585858;
+    padding:0 15px;
+    margin-left:-15px;
+    border-right:1px solid #888;
+    border-bottom:1px solid #888;
+    z-index:999999999;
+}
+
+.ev-nav-group li ul li {
+    clear:left;
+}
+
+.ev-nav-group li ul li a {
+    padding:4px 0;
+}
+
+.ev-nav-group-img {
+    float:left;
+}
+
+.ev-nav-group-img img {
+    width:42px;
+    height:42px;
+    border-radius:2px;
+    margin-right:10px;
+    background-color:white;
+}
+
+.ev-nav-group-text {
+    margin:7px 0 0 0;
+    font-size:18px;
+    font-weight:bold;
+    text-shadow: 1px 1px rgba(0,0,0,.4);
+    float:left;
+}
+
+.ev-nav-group a {
+    color:#fff;
+    text-decoration:none;
+}
+
 .navbar-brand img {
     width:42px;
     height:42px;

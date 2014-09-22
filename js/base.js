@@ -28,4 +28,17 @@ $(document).ready(function() {
             $("#folder-1-1").toggle();
         }
     });
+
+    window.navGroupIsOpen = false;
+    if (navGroupIsOpen === false) {
+        $("#ev-nav-group").bind('click', triggerNavGroupMenu);
+    }
+    function triggerNavGroupMenu() {
+        if (navGroupIsOpen === false) {
+            $(this).find('ul').slideDown( function() { navGroupIsOpen = true; });
+        } else {
+            $(this).find('ul').slideUp( function() { navGroupIsOpen = false; });
+        }
+    };
+
 });
