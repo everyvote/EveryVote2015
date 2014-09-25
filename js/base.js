@@ -1,9 +1,7 @@
 $(document).ready(function() {
     $("#xs-navbar-show-search").click(function() {
-        $("#navbar-brand").toggle("fast");
-        $("#ev-navbar-brand").toggle("fast");
         $("#xs-navbar-search").toggle("fast");
-
+        $("#ev-nav-group").toggle("fast");
         if ( $("#xs-navbar-show-search").html() === '<i class="fa fa-close"></i>') {
             $("#xs-navbar-show-search").html("<i class='fa fa-search'></i>");
         } else {
@@ -13,19 +11,21 @@ $(document).ready(function() {
     $("#folder-1-bar").click(function() {
         if ( $("#folder-1-icon").attr('class') === 'fa fa-caret-right caret-width') {
             $("#folder-1-icon").attr('class', 'fa fa-caret-down caret-width');
-            $("#folder-1").toggle();
+            $("#folder-1").slideDown('slow');
+            scrollToAnchor('#folder-1-bar');
         } else {
             $("#folder-1-icon").attr('class', 'fa fa-caret-right caret-width');
-            $("#folder-1").toggle();
+            $("#folder-1").slideUp('slow');
         }
     });
     $("#folder-1-1-bar").click(function() {
         if ( $("#folder-1-1-icon").attr('class') === 'fa fa-caret-right caret-width') {
             $("#folder-1-1-icon").attr('class', 'fa fa-caret-down caret-width');
-            $("#folder-1-1").toggle();
+            $("#folder-1-1").slideDown('slow');
+            scrollToAnchor('#folder-1-bar');
         } else {
             $("#folder-1-1-icon").attr('class', 'fa fa-caret-right caret-width');
-            $("#folder-1-1").toggle();
+            $("#folder-1-1").slideUp('slow');
         }
     });
 
@@ -41,4 +41,8 @@ $(document).ready(function() {
         }
     };
 
+    function scrollToAnchor(aid){
+        var aTag = $(aid);
+        $('html,body').animate({scrollTop: aTag.offset().top - 100}, 'slow')
+    }
 });

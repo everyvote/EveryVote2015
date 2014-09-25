@@ -81,7 +81,7 @@ ul, ol {
 }
 
 .bg-dk-gry-gradient {
-  background: #696969;
+  background: #676767;
 }
 
 .bg-lt-gry {
@@ -166,7 +166,7 @@ ul, ol {
     position:absolute;
     display:none;
     top:50px;
-    background-color:#585858;
+    background-color:#676767;
     padding:0 15px;
     margin-left:-15px;
     border-right:1px solid #888;
@@ -348,13 +348,16 @@ ul, ol {
     list-style: none;
 }
 
+#tab-bar-left-dropdown {
+    border-right:1px solid #676767;
+}
+
 .tab-bar-left {
 
 }
 
 .tab-bar-left li {
     float: left;
-    border-right: 1px solid #666;
 }
 
 .tab-bar-right {
@@ -363,11 +366,11 @@ ul, ol {
 
 .tab-bar-right>li {
     float: left;
-    border-left: 1px solid #666;
+    border-left: 1px solid #676767;
 }
 
 .tab-bar-right>li:last-child {
-    border-right: 1px solid #666;
+    border-right: 1px solid #676767;
 }
 
 .tab-bar a {
@@ -452,7 +455,7 @@ ul, ol {
 
 .main-content {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
     border-left: 1px solid #aaa;
@@ -509,6 +512,17 @@ ul, ol {
     clear:both;
 }
 
+.profile h4 {
+    display:inline;
+}
+
+@media (max-width:767px) {
+    .profile h4 {
+        font-size:18px !important;
+        margin-top:4px;
+    }
+}
+
 @media (max-width:767px) {
   .profile img {
         float: left;
@@ -535,15 +549,24 @@ ul, ol {
     line-height: 18px;
 }
 
+ .party {
+    margin:0 !important;
+ }
+
 @media (max-width:767px) {
   .profile-social {
     display:none;
   }
 }
 
+.profile-social {
+    float:right;
+    margin-top:-3px;
+}
+
 .profile-social i {
     font-size: 28px;
-    margin-right: 5px;
+    margin-left: 5px;
 }
 
 .ev-footer-container {
@@ -568,7 +591,7 @@ ul, ol {
 
 @media (min-width:768px) and (max-width:991px) {
     .profile-tagline {
-        font-size:12px;
+        font-size:14px;
         margin-bottom:7px !important;
         margin-top:7px;
     }
@@ -576,7 +599,7 @@ ul, ol {
 
 @media (min-width:992px) {
     .profile-tagline {
-        font-size:12px;
+        font-size:13px;
         margin-bottom:7px !important;
         margin-top:7px;
     }
