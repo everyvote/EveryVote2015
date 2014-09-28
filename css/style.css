@@ -358,6 +358,7 @@ ul, ol {
 
 .tab-bar-left li {
     float: left;
+    border-right: 1px solid #676767;
 }
 
 .tab-bar-right {
