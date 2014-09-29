@@ -592,19 +592,20 @@ ul, ol {
 }
 
 .sidebar-dropdown {
-    background-color:#fff;
-    margin:-36px 0 0 0;
     height:36px;
-    padding:5px 5px 0 5px;
-    border-bottom:1px solid #aaa;
-    font-family:"Lora", sans-serif;
+    line-height:36px;
+    padding:0 10px;
     z-index:99999999;
     position:fixed;
     width:100%;
+    font-family: 'Lora', sans-serif;
+    font-size: 14px;
+    letter-spacing: .03em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,.9);
 }
 
 .sidebar-dropdown a {
-    color:#333;
+    color:#eaeaea;
     text-decoration:none;
 }
 
@@ -614,12 +615,17 @@ ul, ol {
 }
 
 .sidebar-sort-by {
-    position: fixed;
+    height:36px;
+    line-height:36px;
     z-index: 99999999;
     text-align: right;
-    right: 10px;
-    top: 59px;
-    font-size: 13px;
+    font-size: 12px;
+    margin:0 10px;
+}
+
+.sidebar-sort-by a {
+    color:#ddd;
+    text-decoration:none;
 }
 
 .sidebar-bar-button {
