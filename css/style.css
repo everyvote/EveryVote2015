@@ -1,5 +1,6 @@
 body {
     font-family: 'Open Sans', sans-serif;
+    background:#f7f7f7;
 }
 
 h1 {
@@ -103,14 +104,23 @@ ul, ol {
     margin:0;
 }
 
+.ev-navbar-full-width {
+    top:0;
+    width:100%;
+    height:50px;
+    background-color: #676767;
+    position:fixed;
+}
+
 .ev-navbar-fixed {
     position:fixed;
+    top:0;
     width:100%;
     z-index:999999;
 }
 
 .ev-navbar {
-    margin-bottom:0;
+    margin:0 auto;
     border-top:none;
     border-right:none;
     border-bottom: none;
@@ -118,6 +128,7 @@ ul, ol {
     font-family:"Lora", sans-serif;
     box-shadow: 0px 1px 3px 1px rgba(0,0,0,.2);
     z-index: 9999;
+    max-width:1080px;
 }
 
 .ev-navbar a {
@@ -156,6 +167,7 @@ ul, ol {
 
 .ev-nav-group {
     padding:4px 0;
+    cursor:pointer;
 }
 
 .ev-nav-group, .ev-nav-group li, .ev-nav-group ul {
@@ -330,9 +342,20 @@ ul, ol {
 
 /*----TAB BAR----*/
 
+.tab-bar-full-width {
+    width:100%;
+    height:36px;
+    top:50px;
+    background-color: #494949;
+    position:fixed;
+}
+
 .tab-bar-container {
     background-color: #494949;
     box-shadow: 0px 1px 3px 1px rgba(0,0,0,.4);
+    top:50px;
+    max-width:1080px;
+    margin:0 auto;
 }
 
 .tab-bar {
@@ -414,15 +437,19 @@ ul, ol {
     color: #fff;
 }
 
-.ev-body-indent {
+.ev-body-container {
     padding-top:86px;
+    max-width:1080px;
+    margin:0 auto;
+    border-right:1px solid #aaa;
+    box-shadow: 0px 1px 3px 1px rgba(0,0,0,.2);
+    background-color:#fff;
 }
 
 /*----COVER IMAGE----*/
 
 .cover-img {
     position:relative;
-    z-index:-9999;
     color: #fff;
 }
 
@@ -459,8 +486,6 @@ ul, ol {
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
-    border-left: 1px solid #aaa;
-    border-right: 1px solid #aaa;
 }
 
 @media (min-width:521px) and (max-width:767px) {
@@ -480,9 +505,14 @@ ul, ol {
     }
 }
 
+.main-border {
+    border-right:1px solid #aaa;
+    border-left:1px solid #aaa;
+}
+
 .profile-folder-bar {
     width:100%;
-    margin:0 0 15px 0;
+    margin:0 0 20px 0;
     padding: 2px 15px;
     background-color: #949494;
     border-radius:20px;
@@ -512,7 +542,7 @@ ul, ol {
 }
 
 .profile {
-    margin:0 15px 15px 0;
+    margin:0 15px 20px 0;
     clear:both;
 }
 
@@ -595,9 +625,7 @@ ul, ol {
     height:36px;
     line-height:36px;
     padding:0 10px;
-    z-index:99999999;
     position:fixed;
-    width:100%;
     font-family: 'Lora', sans-serif;
     font-size: 14px;
     letter-spacing: .03em;
@@ -617,7 +645,6 @@ ul, ol {
 .sidebar-sort-by {
     height:36px;
     line-height:36px;
-    z-index: 99999999;
     text-align: right;
     font-size: 12px;
     margin:0 10px;
@@ -662,6 +689,8 @@ ul, ol {
 .ev-footer {
     height: 50px;
     z-index: 999999;
+    max-width:1080px;
+    margin:0 auto;
 }
 
 .ev-footer a {
