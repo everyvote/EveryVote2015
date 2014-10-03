@@ -7,6 +7,7 @@ h1 {
     font-family: 'Lora', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin-top: 0;
 }
 
 h2 {
@@ -36,10 +37,13 @@ h4 {
     font-size: 20px;
     margin-top: 0px;
 }
+
 h5 {
     font-family: 'Lora', sans-serif;
     font-size: 14px;
     letter-spacing: .01em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 ul {
@@ -461,7 +465,7 @@ hr {
 }
 
 .cover-img h1 {
-    bottom: 10px;
+    bottom: 0px;
     left: 25px;
     position: absolute;
     z-index: 99999;
@@ -469,7 +473,7 @@ hr {
 }
 
 .cover-img h5 {
-    bottom: 55px;
+    bottom: 50px;
     left: 25px;
     position: absolute;
     z-index: 99999;
@@ -482,6 +486,24 @@ hr {
     opacity: .8;
 }
 
+@media screen and (min-width: 768px) {
+    .main-content h1 {
+        display: none;
+  }
+    .main-content h5 {
+        display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+    .cover-img h1 {
+        display: none;
+  }
+    .cover-img h5 {
+        display: none;
+  }
+}
+
 /*----MAIN CONTENT----*/
 
 .main-content {
@@ -489,6 +511,11 @@ hr {
     padding-bottom: 10px;
     padding-left: 25px;
     padding-right: 25px;
+}
+
+.main-content h1 {
+    padding-bottom: 6px;
+    border-bottom: 1px dotted #999;
 }
 
 @media (min-width:521px) and (max-width:767px) {
@@ -505,6 +532,9 @@ hr {
         padding-right: 25px;
         border-left: none;
         border-right: none;
+    }
+    .main-content h1 {
+        font-size: 25px;
     }
 }
 
