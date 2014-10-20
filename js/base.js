@@ -28,6 +28,25 @@ $(document).ready(function() {
             $("#folder-1-1").slideUp('slow');
         }
     });
+    $("#sidebar-1-bar").click(function() {
+        if ( $("#sidebar-1-icon").attr('class') === 'fa fa-plus-square-o') {
+            $("#sidebar-1-icon").attr('class', 'fa fa-minus-square-o');
+            $("#sidebar-1").slideDown('slow');
+        } else {
+            $("#sidebar-1-icon").attr('class', 'fa fa-plus-square-o');
+            $("#sidebar-1").slideUp('slow');
+        }
+    });
+    $("#sidebar-1-1-bar").click(function() {
+        if ( $("#sidebar-1-1-icon").attr('class') === 'fa fa-plus-square-o') {
+            $("#sidebar-1-1-icon").attr('class', 'fa fa-minus-square-o');
+            $("#sidebar-1-1").slideDown('slow');
+        } else {
+            $("#sidebar-1-1-icon").attr('class', 'fa fa-plus-square-o');
+            $("#sidebar-1-1").slideUp('slow');
+        }
+        console.log('yes');
+    });
 
     window.navGroupIsOpen = false;
     if (navGroupIsOpen === false) {
