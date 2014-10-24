@@ -64,4 +64,12 @@ $(document).ready(function() {
         var aTag = $(aid);
         $('html,body').animate({scrollTop: aTag.offset().top - 100}, 'slow')
     }
+
+    // temporary demo code
+    $('.profile-multimedia').each(function (index) {
+
+    })
+    $('.profile-multimedia').bind('click',function(){
+        alert('open YouTube video via API');
+    })
 });

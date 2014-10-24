@@ -578,9 +578,18 @@ hr {
     margin:0 0 20px 0;
 }
 
+.onpage-nav {
+    margin-bottom:-10px;
+}
+
 .groups-search {
     margin:20px 0;
     font-family:"Lora", sans-serif;
+}
+
+.profile a {
+    color:#333;
+    text-decoration: none;
 }
 
 .profile-folder-bar {
@@ -704,7 +713,7 @@ hr {
 
 .profile-nav {
     float:right;
-    margin:5px 0 0 0;
+    margin:3px 0 0 0;
 }
 
 .profile-nav a {
@@ -787,6 +796,11 @@ hr {
     margin:10px;
     font-size:14px;
     clear:both;
+}
+
+.sidebar-profile a {
+    color:#333;
+    text-decoration:none;
 }
 
 .sidebar-profile-picture {
