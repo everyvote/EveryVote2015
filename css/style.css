@@ -611,7 +611,6 @@ hr {
     float:right;
     margin:0 0 0 20px;
     text-transform: lowercase;
-
 }
 
 .caret-width {
@@ -665,6 +664,21 @@ hr {
 .profile p {
     margin-bottom: 5px;
     line-height: 18px;
+}
+
+.group {
+    padding-top:25px;
+    padding-bottom:25px;
+    padding-left:25px;
+    padding-right:25px;
+    margin-left:-25px;
+    margin-right:-25px;
+    margin-bottom: 0px;
+    clear:both;
+}
+
+.group:nth-child(odd) {
+    background-color: #F2F2F2;
 }
 
 @media (max-width:767px) {
