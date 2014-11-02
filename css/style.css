@@ -429,15 +429,16 @@ hr {
 .tab-bar-active:after {
     content: '';
     width: 10px;
-    border-right: 6px  solid transparent;
-    border-left: 6px  solid transparent;
-    border-bottom: 6px  solid transparent;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-bottom: 6px solid transparent;
     border-top: 6px solid #676767;
-    position:absolute;
-    top:0;
+    position: absolute;
+    top: 0;
     right: 0;
+    bottom: 0;
     left: 0;
-    margin: 0 auto;
+    margin:0 auto;
 }
 
 .tab-bar-right {
@@ -632,15 +633,10 @@ hr {
 }
 
 .profile-folder {
-    padding:0 0 0 15px;
 }
 
 .profile {
-<<<<<<< HEAD
-    margin:0 15px 0 0;
-=======
     margin: 20px 0;
->>>>>>> 021b160fedf90a87a62893790e3ec8a8b5002377
     clear:both;
 }
 
@@ -659,14 +655,8 @@ hr {
 @media (min-width:768px) {
   .profile img {
         float: left;
-<<<<<<< HEAD
         margin-right: 15px;
         width: 54px;
-=======
-        margin-right: 20px;
-        width: 110px;
-        /* border-radius:10px; */
->>>>>>> 021b160fedf90a87a62893790e3ec8a8b5002377
   }
 }
 
@@ -690,11 +680,21 @@ hr {
     margin:20px 0 0 0;
 }
 
+.profile-subtitle {
+    overflow:hidden;
+}
+
+.profile-stats {
+    float:right;
+    margin-left:15px;
+}
+
 .group {
     padding-top:25px;
     padding-bottom:25px;
     padding-left:25px;
     padding-right:25px;
+    margin-top: 0;
     margin-left:-25px;
     margin-right:-25px;
     margin-bottom: 0px;
@@ -705,22 +705,27 @@ hr {
     background-color: #F2F2F2;
 }
 
+.profile-multimedia {
+    clear: both;
+    width: 54px;
+    line-height: 38px;
+    float: left;
+    text-align: center;
+    margin-right: 15px;
+    font-size: 42px;
+    cursor: pointer;
+}
+
+
 @media (max-width:767px) {
-    .profile-multimedia {
-        display:none;
+    .profile-summary {
+        overflow:auto;
     }
 }
 
 @media (min-width:768px) {
-    .profile-multimedia {
-        clear: both;
-        width: 42px;
-        line-height: 38px;
-        float: right;
-        text-align: right;
-        margin-left: 15px;
-        font-size: 42px;
-        cursor: pointer;
+    .profile-summary {
+        overflow:hidden;
     }
 }
 
@@ -882,28 +887,6 @@ hr {
 .ev-footer a {
     margin-right:10px;
     float:right;
-}
-
-@media (max-width:767px) {
-  .profile-summary {
-    display:none;
-  }
-}
-
-@media (min-width:768px) and (max-width:991px) {
-    .profile-summary {
-        font-size:13px;
-        overflow:hidden;
-    }
-}
-
-@media (min-width:992px) {
-    .profile-summary {
-        font-size:13px;
-        margin-bottom:7px !important;
-        margin-top:7px;
-        overflow:hidden;
-    }
 }
 
 .row {
