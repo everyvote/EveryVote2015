@@ -623,7 +623,7 @@ hr {
 }
 
 .profile {
-    margin:0 0 20px 0;
+    margin:0 15px 0 0;
     clear:both;
 }
 
@@ -632,27 +632,18 @@ hr {
 }
 
 @media (max-width:767px) {
-    .profile h4 {
-        font-size:18px !important;
-        margin-top:4px;
-    }
-}
-
-@media (max-width:767px) {
   .profile img {
         float: left;
         margin-right: 15px;
-        width: 55px;
-        border-radius:5px;
+        width: 54px;
   }
 }
 
 @media (min-width:768px) {
   .profile img {
         float: left;
-        margin-right: 20px;
-        width: 110px;
-        border-radius:10px;
+        margin-right: 15px;
+        width: 54px;
   }
 }
 
@@ -664,6 +655,16 @@ hr {
 .profile p {
     margin-bottom: 5px;
     line-height: 18px;
+}
+
+.profile-row-first {
+    clear:both;
+    margin:0;
+}
+
+.profile-row {
+    clear:both;
+    margin:20px 0 0 0;
 }
 
 .group {
@@ -689,12 +690,14 @@ hr {
 
 @media (min-width:768px) {
     .profile-multimedia {
-        width:70px;
-        float:right;
-        text-align:right;
-        font-size:48px;
-        margin-top:-9px;
-        cursor:pointer;
+        clear: both;
+        width: 42px;
+        line-height: 38px;
+        float: right;
+        text-align: right;
+        margin-left: 15px;
+        font-size: 42px;
+        cursor: pointer;
     }
 }
 
@@ -867,8 +870,6 @@ hr {
 @media (min-width:768px) and (max-width:991px) {
     .profile-summary {
         font-size:13px;
-        margin-bottom:7px !important;
-        margin-top:7px;
         overflow:hidden;
     }
 }
