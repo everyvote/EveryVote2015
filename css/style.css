@@ -628,7 +628,7 @@ hr {
 }
 
 .caret-width {
-    width:25px;
+    width:38px;
     display:inline-block;
 }
 
@@ -636,8 +636,14 @@ hr {
 }
 
 .profile {
-    margin: 20px 0;
+    margin: 20px 0 0 0;
     clear:both;
+}
+
+@media (min-width:768px) {
+    .profile-indent {
+        margin-left: 28px;
+    }
 }
 
 .profile h4 {
@@ -671,17 +677,55 @@ hr {
 }
 
 .profile-row-first {
-    clear:both;
-    margin:0;
+    clear: both;
+    margin: 0 0 15px 0;
 }
 
 .profile-row {
     clear:both;
-    margin:20px 0 0 0;
+    margin: 0 0 15px 0;
+}
+
+.profile-middle {
+    overflow: hidden;
 }
 
 .profile-subtitle {
     overflow:hidden;
+}
+
+.profile-action-box-first {
+    float: left;
+    text-align: left;
+    height: 54px;
+    width: 40px;
+    line-height: 50px;
+    font-size: 24px;
+    color: #8e8e8e;
+}
+
+.profile-action-box-first i {
+    text-align: left;
+}
+
+.profile-action-box {
+    float: left;
+    height: 32px;
+    width: 40px;
+    line-height: 30px;
+    text-align: left;
+    font-size: 24px;
+    color: #8e8e8e;
+}
+
+@media (max-width:767px) {
+    .profile-action-box {
+
+    }
+}
+
+.profile-action-box i {
+    text-align: left;
 }
 
 .profile-stats {
@@ -705,17 +749,42 @@ hr {
     background-color: #F2F2F2;
 }
 
-.profile-multimedia {
-    clear: both;
-    width: 54px;
-    line-height: 38px;
-    float: left;
-    text-align: center;
-    margin-right: 15px;
-    font-size: 42px;
+.profile-multimedia-first {
+    width: 34px;
+    height: 40px;
+    line-height: 35px;
+    float: right;
+    margin-left: 15px;
+    text-align: right;
+    color: #999;
+    font-size: 28px;
     cursor: pointer;
 }
 
+.profile-multimedia-first i {
+    text-align: right;
+}
+
+.profile-multimedia {
+    width: 34px;
+    height: 40px;
+    line-height: 35px;
+    float: right;
+    margin-top: 15px;
+    margin-left: 15px;
+    text-align: right;
+    color: #999;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.profile-multimedia i {
+    text-align: right;
+}
+
+.profile-summary {
+    font-size:13px;
+}
 
 @media (max-width:767px) {
     .profile-summary {
@@ -741,11 +810,10 @@ hr {
 
 .profile-social {
     float:right;
-    margin-top:-3px;
 }
 
 .profile-social i {
-    font-size: 28px;
+    font-size: 24px;
     margin-left: 5px;
 }
 
