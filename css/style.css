@@ -65,7 +65,11 @@ hr {
 }
 
 .padding-clear {
-    padding:0;
+    padding:0 !important;
+}
+
+.margin-clear {
+    margin:0 !important;
 }
 
 @media (max-width:520px) {
@@ -628,7 +632,7 @@ hr {
 }
 
 .caret-width {
-    width: 25px;
+    width: 30px;
     display:inline-block;
 }
 
@@ -636,13 +640,13 @@ hr {
 }
 
 .profile {
-    padding: 20px 0;
+    margin: 20px 0;
     clear:both;
 }
 
 @media (min-width:768px) {
     .profile-indent {
-        margin-left: 28px;
+        margin-left: 30px !important;
     }
 }
 
@@ -662,7 +666,7 @@ hr {
   .profile img {
         float: left;
         margin-right: 15px;
-        width: 54px;
+        width: 100px;
   }
 }
 
@@ -678,7 +682,6 @@ hr {
 
 .profile-row-first {
     clear: both;
-    margin: 0 0 15px 25px;
 }
 
 .profile-row {
@@ -690,8 +693,35 @@ hr {
     overflow: hidden;
 }
 
+.profile-title {
+    clear:both;
+    font-size:18px;
+    font-weight:bold;
+    margin:0 0 10px 0;
+}
+
 .profile-subtitle {
     overflow:hidden;
+}
+
+@media (min-width:768px) {
+    .profile-subtitle {
+        margin: 0 0 10px 0;
+    }
+}
+
+.profile-vote-action-box {
+    float: left;
+    text-align: left;
+    height: 100px;
+    width:30px;
+    line-height: 100px;
+    font-size: 25px;
+    color: #a0a0a0;
+}
+
+.profile-vote-action-box i {
+    text-align:left;
 }
 
 .profile-action-box-first {
@@ -702,7 +732,7 @@ hr {
     line-height: 30px;
     font-size: 28px;
     color: #8e8e8e;
-    margin:0 15px 0 25px;
+    margin:0 15px 0 0;
 }
 
 .profile-action-box-first i {
@@ -712,12 +742,12 @@ hr {
 .profile-action-box {
     float: left;
     height: 32px;
-    width: 54px;
+    width: 100px;
     line-height: 30px;
     text-align: center;
     font-size: 20px;
     color: #a0a0a0;
-    margin: 3px 15px 0 25px;
+    margin: 3px 15px 0 0;
 }
 
 @media (max-width:767px) {
@@ -752,39 +782,46 @@ hr {
 }
 
 .profile-multimedia-first {
-    width: 34px;
-    height: 32px;
-    line-height: 30px;
+    width: 80px;
+    height: 34px;
+    line-height: 31px;
     float: right;
-    margin-left: 15px;
-    text-align: right;
+    margin-top: 2px;
+    margin-left: 20px;
+    text-align: center;
     color: #a0a0a0;
     font-size: 24px;
     cursor: pointer;
+    border:1px solid #a0a0a0;
+    border-radius:20px;
 }
 
 .profile-multimedia-first i {
-    text-align: right;
+    text-align: center;
 }
 
 .profile-multimedia {
-    width: 34px;
-    height: 32px;
-    line-height: 30px;
+    width: 80px;
+    height: 34px;
+    line-height: 31px;
     float: right;
-    margin-left: 15px;
-    text-align: right;
+    margin-top: 2px;
+    margin-left: 20px;
+    text-align: center;
     color: #a0a0a0;
     font-size: 24px;
     cursor: pointer;
+    border: 1px solid #a0a0a0;
+    border-radius: 20px;
 }
 
 .profile-multimedia i {
-    text-align: right;
+    text-align: center;
 }
 
 .profile-summary {
-    font-size:13px;
+    font-size:12px;
+    max-width:550px;
 }
 
 @media (max-width:767px) {
