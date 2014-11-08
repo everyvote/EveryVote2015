@@ -22,14 +22,9 @@
 
   </head>
   <body>
-  <div class="ev-navbar-full-width bg-dk-gry-gradient">
-    <!-- this puts a grey background full width behind navbar -->
-  </div>
-  <div class="tab-bar-full-width">
-    <!-- this puts a dark grey background full width behind navbar -->
-  </div>
-  <div class="ev-navbar-fixed">
-    <nav class="navbar navbar-default bg-dk-gry-gradient ev-navbar" role="navigation">
+
+  <div class="ev-navbar-full-width bg-dk-gry-gradient"> <!-- grey background full width behind navbar -->
+    <nav class="navbar ev-navbar-container" role="navigation"> <!-- keeps content centered at 1080px width -->
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -81,7 +76,10 @@
         </form>
       </div><!-- /.navbar-collapse -->
     </nav>
-    <div class="tab-bar-container">
+  </div><!-- /.ev-navbar-full-width -->
+
+  <div class="tab-bar-full-width"> <!-- dark grey background full width behind navbar -->
+    <div class="tab-bar-container"> <!-- keeps content centered at 1080px width -->
       <div class="row">
         <div class="col-sm-9">
           <div class="tab-bar">
@@ -136,157 +134,158 @@
           </div><!-- /.col-sm-3 -->
         </div><!-- /.row -->
     </div><!-- /.tab-bar-container -->
-  </div><!-- /.ev-navbar-fixed -->
-    <div class="ev-body-container">
-      <div class="row">
-        <div class="col-sm-9">
-          <div class="main-border">
-            <div class="cover-img">
-              <h5>NIU > Student Association</h5>
-              <h1>Fall 2014 Session</h1>
-              <img src="img/shadow.png" class="img-responsive cover-img-shadow" />
-              <img src="img/niu.png" class="img-responsive" />
-            </div>
-            <div class="main-content">
-              <h5>NIU > Student Association</h5>
-              <h1>Fall 2014 Session</h1>
-              <h2>Election</h2>
-              <p><b>Voting begins in 58 days and 6 hours</b></p>
-              <p>Voting Days: October 23 (9am-5pm), October 24 (7am-7pm), October 25 (9am-5pm)</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur lacinia mi, nec tincidunt eros. Aliquam nec sem aliquet, mattis nisi sit amet, fringilla arcu. Aenean egestas risus eu facilisis vulputate. Praesent rutrum mollis nisl, eget tempor turpis interdum ultricies. Cras imperdiet mi ut risus pellentesque porta.... <a href="#">show more</a></p>
-              <h2>Candidates</h2>
-              <p class="main-sort-by">Sort by: <a>random</a></p>
-              <div id="folder-1-bar" class="profile-folder-bar">
-                <h3><i id="folder-1-icon" class="fa fa-caret-down caret-width"></i>Executive Branch <span class="profile-folder-bar-number">14</span></h3>
-              </div>
-              <div id="folder-1">
-                <div id="folder-1-1-bar" class="profile-folder-bar">
-                  <h3><i id="folder-1-1-icon" class="fa fa-caret-down caret-width"></i>President <span class="profile-folder-bar-number">4</span></h3>
-                </div>
-                <div id="folder-1-1">
-                  <div class="profile clearfix">
-                    <div class="profile-row-first">
-                      <div class="profile-vote-action-box">
-                        <i class="fa fa-fw fa-check-circle-o"></i>
-                      </div>
-                      <div class="profile-middle">
-                        <a href="candidate.html">
-                          <img src="img/sojourner-truth.jpg" />
-                          <h4>Sojourner Truth</h4>
-                        </a>
-                        <div class="profile-social">
-                          <i class="fa fa-facebook-square"></i>
-                          <i class="fa fa-twitter-square"></i>
-                          <i class="fa fa-linkedin-square"></i>
-                          <i class="fa fa-pinterest-square"></i>
-                        </div>
-                        <hr>
-                        <div class="profile-subtitle">
-                          <div class="profile-stats">
-                            7 <i class="fa fa-question-circle fa-fw"></i>
-                            34 <i class="fa fa-comment fa-fw"></i>
-                          </div>
-                          <b>Independent</b>
-                        </div>
-                        <div class="profile-multimedia">
-                          <i class="fa fa-play-circle-o fa-fw"></i>
-                        </div>
-                        <div class="profile-summary">
-                          If the first woman God ever made was strong enough to turn the world upside down all alone, these women together ought to be able to turn it back, and get it right side up again!
-                        </div>
-                      </div><!-- /.profile-middle -->
-                    </div><!-- /.profile-row-first -->
-                  </div><!-- /.profile clearfix -->
-                </div><!-- /.profile-folder -->
-              </div><!-- /.profile-folder -->
-              <div id="folder-2-bar" class="profile-folder-bar">
-                <h3><i id="folder-2-icon" class="fa fa-caret-right caret-width"></i>Judicial Branch <span class="profile-folder-bar-number">7</span></h3>
-              </div>
-              <div id="folder-3-bar" class="profile-folder-bar">
-                <h3><i id="folder-3-icon" class="fa fa-caret-right caret-width"></i>Legislative Branch <span class="profile-folder-bar-number">35</span></h3>
-              </div>
-            </div><!-- /.main-content -->
-          </div><!-- /.main-border -->
-        </div><!-- /.col-sm-9 -->
-        <div class="col-sm-3 hidden-xs">
-          <div id="sidebar-1-bar" class="sidebar-bar-button click-me-color">
-            <h3><i id="sidebar-1-icon" class="fa fa-minus-square-o"></i> Executive Branch</h3>
-          </div>
-          <div id="sidebar-1" class="sidebar-folder">
-            <div id="sidebar-1-1-bar" class="sidebar-bar-button click-me-color">
-              <div class="sidebar-indent"></div><h3><i id="sidebar-1-1-icon" class="fa fa-minus-square-o"></i> President</h3>
-            </div>
-            <div id="sidebar-1-1" class="sidebar-folder">
-              <div class="sidebar-profile">
-                <div class="sidebar-profile-picture">
-                  &nbsp&nbsp<img src="img/sojourner-truth.jpg" />
-                </div>
-                <div class="sidebar-profile-text-wrapper">
-                  <a href="candidate.html"><p>Sojourner Truth</p></a>
-                </div>
-                <div class="clearfix"></div>
-              </div><!-- /.sidebar-profile -->
-              <div class="sidebar-profile">
-                <div class="sidebar-profile-picture">
-                  &nbsp&nbsp<img src="img/user.png" />
-                </div>
-                <div class="sidebar-profile-text-wrapper">
-                  <p>Frederick Douglass</p>
-                </div>
-                <div class="clearfix"></div>
-              </div><!-- /.sidebar-profile -->
-              <div class="sidebar-profile">
-                <div class="sidebar-profile-picture">
-                  &nbsp&nbsp<img src="img/jane-addams.jpg" />
-                </div>
-                <div class="sidebar-profile-text-wrapper">
-                  <p>Jane Addams</p>
-                </div>
-                <div class="clearfix"></div>
-              </div><!-- /.sidebar-profile -->
-              <div class="sidebar-profile">
-                <div class="sidebar-profile-picture">
-                  &nbsp&nbsp<img src="img/thomas-paine.jpg" />
-                </div>
-                <div class="sidebar-profile-text-wrapper">
-                  <p>Thomas Paine</p>
-                </div>
-                <div class="clearfix"></div>
-              </div><!-- /.sidebar-profile -->
-            </div><!-- /#sidebar-1-1 -->
-            <div class="sidebar-bar-button">
-              <div class="sidebar-indent"></div><h3><i class="fa fa-plus-square-o"></i> Vice-President</h3>
-            </div>
-            <div class="sidebar-bar-button">
-              <div class="sidebar-indent"></div><h3><i class="fa fa-plus-square-o"></i> Treasurer</h3>
-            </div>
-            <div class="sidebar-bar-button sidebar-bar-button-last">
-              <div class="sidebar-indent"></div><h3><i class="fa fa-plus-square-o"></i> Secretary</h3>
-            </div>
-          </div><!-- /#sidebar-1 -->
-          <div class="sidebar-bar-button">
-            <h3><i class="fa fa-plus-square-o"></i> Legislative Branch</h3>
-          </div>
-          <div class="sidebar-bar-button">
-            <h3><i class="fa fa-plus-square-o"></i> Judicial Branch</h3>
-          </div>
-        </div><!-- /.col-sm-3 -->
-      </div><!-- /.row -->
-    </div><!-- /.ev-body-container -->
-    <div class="ev-footer-container">
-        <div class="row">
-          <div class="col-xs-12">
-              <div class="ev-footer">
-                  <a href="#" target="_blank"><img src="img/ev-brand.png" /></a>
-              </div>
-          </div>
-        </div>
-    </div>
+  </div><!-- /.tab-bar-full-width -->
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-1.11.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
-    <script src="js/base.js"></script>
+  <div class="ev-body-container">
+    <div class="row">
+      <div class="col-sm-9">
+        <div class="main-border">
+          <div class="cover-img">
+            <h5>NIU > Student Association</h5>
+            <h1>Fall 2014 Session</h1>
+            <img src="img/shadow.png" class="img-responsive cover-img-shadow" />
+            <img src="img/niu.png" class="img-responsive" />
+          </div>
+          <div class="main-content">
+            <h5>NIU > Student Association</h5>
+            <h1>Fall 2014 Session</h1>
+            <h2>Election</h2>
+            <p><b>Voting begins in 58 days and 6 hours</b></p>
+            <p>Voting Days: October 23 (9am-5pm), October 24 (7am-7pm), October 25 (9am-5pm)</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis consectetur lacinia mi, nec tincidunt eros. Aliquam nec sem aliquet, mattis nisi sit amet, fringilla arcu. Aenean egestas risus eu facilisis vulputate. Praesent rutrum mollis nisl, eget tempor turpis interdum ultricies. Cras imperdiet mi ut risus pellentesque porta.... <a href="#">show more</a></p>
+            <h2>Candidates</h2>
+            <p class="main-sort-by">Sort by: <a>random</a></p>
+            <div id="folder-1-bar" class="profile-folder-bar">
+              <h3><i id="folder-1-icon" class="fa fa-caret-down caret-width"></i>Executive Branch <span class="profile-folder-bar-number">14</span></h3>
+            </div>
+            <div id="folder-1">
+              <div id="folder-1-1-bar" class="profile-folder-bar">
+                <h3><i id="folder-1-1-icon" class="fa fa-caret-down caret-width"></i>President <span class="profile-folder-bar-number">4</span></h3>
+              </div>
+              <div id="folder-1-1">
+                <div class="profile clearfix">
+                  <div class="profile-row-first">
+                    <div class="profile-vote-action-box">
+                      <i class="fa fa-fw fa-check-circle-o"></i>
+                    </div>
+                    <div class="profile-middle">
+                      <a href="candidate.html">
+                        <img src="img/sojourner-truth.jpg" />
+                        <h4>Sojourner Truth</h4>
+                      </a>
+                      <div class="profile-social">
+                        <i class="fa fa-facebook-square"></i>
+                        <i class="fa fa-twitter-square"></i>
+                        <i class="fa fa-linkedin-square"></i>
+                        <i class="fa fa-pinterest-square"></i>
+                      </div>
+                      <hr>
+                      <div class="profile-subtitle">
+                        <div class="profile-stats">
+                          7 <i class="fa fa-question-circle fa-fw"></i>
+                          34 <i class="fa fa-comment fa-fw"></i>
+                        </div>
+                        <b>Independent</b>
+                      </div>
+                      <div class="profile-multimedia">
+                        <i class="fa fa-play-circle-o fa-fw"></i>
+                      </div>
+                      <div class="profile-summary">
+                        If the first woman God ever made was strong enough to turn the world upside down all alone, these women together ought to be able to turn it back, and get it right side up again!
+                      </div>
+                    </div><!-- /.profile-middle -->
+                  </div><!-- /.profile-row-first -->
+                </div><!-- /.profile clearfix -->
+              </div><!-- /.profile-folder -->
+            </div><!-- /.profile-folder -->
+            <div id="folder-2-bar" class="profile-folder-bar">
+              <h3><i id="folder-2-icon" class="fa fa-caret-right caret-width"></i>Judicial Branch <span class="profile-folder-bar-number">7</span></h3>
+            </div>
+            <div id="folder-3-bar" class="profile-folder-bar">
+              <h3><i id="folder-3-icon" class="fa fa-caret-right caret-width"></i>Legislative Branch <span class="profile-folder-bar-number">35</span></h3>
+            </div>
+          </div><!-- /.main-content -->
+        </div><!-- /.main-border -->
+      </div><!-- /.col-sm-9 -->
+      <div class="col-sm-3 hidden-xs">
+        <div id="sidebar-1-bar" class="sidebar-bar-button click-me-color">
+          <h3><i id="sidebar-1-icon" class="fa fa-minus-square-o"></i> Executive Branch</h3>
+        </div>
+        <div id="sidebar-1" class="sidebar-folder">
+          <div id="sidebar-1-1-bar" class="sidebar-bar-button click-me-color">
+            <div class="sidebar-indent"></div><h3><i id="sidebar-1-1-icon" class="fa fa-minus-square-o"></i> President</h3>
+          </div>
+          <div id="sidebar-1-1" class="sidebar-folder">
+            <div class="sidebar-profile">
+              <div class="sidebar-profile-picture">
+                &nbsp&nbsp<img src="img/sojourner-truth.jpg" />
+              </div>
+              <div class="sidebar-profile-text-wrapper">
+                <a href="candidate.html"><p>Sojourner Truth</p></a>
+              </div>
+              <div class="clearfix"></div>
+            </div><!-- /.sidebar-profile -->
+            <div class="sidebar-profile">
+              <div class="sidebar-profile-picture">
+                &nbsp&nbsp<img src="img/user.png" />
+              </div>
+              <div class="sidebar-profile-text-wrapper">
+                <p>Frederick Douglass</p>
+              </div>
+              <div class="clearfix"></div>
+            </div><!-- /.sidebar-profile -->
+            <div class="sidebar-profile">
+              <div class="sidebar-profile-picture">
+                &nbsp&nbsp<img src="img/jane-addams.jpg" />
+              </div>
+              <div class="sidebar-profile-text-wrapper">
+                <p>Jane Addams</p>
+              </div>
+              <div class="clearfix"></div>
+            </div><!-- /.sidebar-profile -->
+            <div class="sidebar-profile">
+              <div class="sidebar-profile-picture">
+                &nbsp&nbsp<img src="img/thomas-paine.jpg" />
+              </div>
+              <div class="sidebar-profile-text-wrapper">
+                <p>Thomas Paine</p>
+              </div>
+              <div class="clearfix"></div>
+            </div><!-- /.sidebar-profile -->
+          </div><!-- /#sidebar-1-1 -->
+          <div class="sidebar-bar-button">
+            <div class="sidebar-indent"></div><h3><i class="fa fa-plus-square-o"></i> Vice-President</h3>
+          </div>
+          <div class="sidebar-bar-button">
+            <div class="sidebar-indent"></div><h3><i class="fa fa-plus-square-o"></i> Treasurer</h3>
+          </div>
+          <div class="sidebar-bar-button sidebar-bar-button-last">
+            <div class="sidebar-indent"></div><h3><i class="fa fa-plus-square-o"></i> Secretary</h3>
+          </div>
+        </div><!-- /#sidebar-1 -->
+        <div class="sidebar-bar-button">
+          <h3><i class="fa fa-plus-square-o"></i> Legislative Branch</h3>
+        </div>
+        <div class="sidebar-bar-button">
+          <h3><i class="fa fa-plus-square-o"></i> Judicial Branch</h3>
+        </div>
+      </div><!-- /.col-sm-3 -->
+    </div><!-- /.row -->
+  </div><!-- /.ev-body-container -->
+  <div class="ev-footer-container">
+    <div class="row">
+      <div class="col-xs-12">
+          <div class="ev-footer">
+              <a href="#" target="_blank"><img src="img/ev-brand.png" /></a>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="bootstrap-3.2.0-dist/js/bootstrap.min.js"></script>
+  <script src="js/base.js"></script>
   </body>
 </html>
