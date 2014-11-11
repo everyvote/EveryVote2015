@@ -22,14 +22,8 @@
 
   </head>
   <body>
-  <div class="ev-navbar-full-width bg-dk-gry-gradient">
-    <!-- this puts a grey background full width behind navbar -->
-  </div>
-  <div class="tab-bar-full-width">
-    <!-- this puts a dark grey background full width behind navbar -->
-  </div>
-  <div class="ev-navbar-fixed">
-    <nav class="navbar navbar-default bg-dk-gry-gradient ev-navbar" role="navigation">
+  <div class="ev-navbar-full-width bg-dk-gry-gradient"> <!-- grey background full width behind navbar -->
+    <nav class="navbar ev-navbar-container" role="navigation"> <!-- keeps content centered at 1080px width -->
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -81,7 +75,10 @@
         </form>
       </div><!-- /.navbar-collapse -->
     </nav>
-    <div class="tab-bar-container">
+  </div><!-- /.ev-navbar-full-width -->
+
+  <div class="tab-bar-full-width"> <!-- dark grey background full width behind navbar -->
+    <div class="tab-bar-container"> <!-- keeps content centered at 1080px width -->
       <div class="row">
         <div class="col-sm-9">
           <div class="tab-bar">
@@ -136,7 +133,8 @@
           </div><!-- /.col-sm-3 -->
         </div><!-- /.row -->
     </div><!-- /.tab-bar-container -->
-  </div><!-- /.ev-navbar-fixed -->
+  </div><!-- /.tab-bar-full-width -->
+
   <div class="ev-body-container">
     <div class="row">
       <div class="col-sm-9">
@@ -320,7 +318,7 @@
       </div><!-- /.col-sm-3 -->
     </div><!-- /.row -->
   </div><!-- /.ev-body-container -->
-  <div class="ev-footer-container">
+  <div class="ev-footer-container bg-dk-gry-gradient">
       <div class="row">
         <div class="col-xs-12">
             <div class="ev-footer">
