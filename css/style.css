@@ -32,7 +32,7 @@ h3 {
 }
 
 h4 {
-    font-family: 'Lora', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin-bottom: 5px !important;
     font-weight: 500;
     font-size: 20px;
@@ -47,6 +47,15 @@ h5 {
     margin-bottom: 0;
 }
 
+h6 {
+    margin-top: 0;
+    margin-bottom: 4px;
+}
+
+.more {
+  color: #ff0000;
+}
+
 ul {
     -webkit-padding-start: 0px;
     padding-left:0;
@@ -57,7 +66,9 @@ ul, ol {
 }
 
 hr {
-    border-top:1px solid #ddd;
+    border-top: 1px solid #939393;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .display-none {
@@ -99,7 +110,18 @@ hr {
 }
 
 .bg-lt-gry {
-  background-color: #949494 !important;
+  background-color: #F4F5F5 !important;
+  border: 1px solid #e7e7e7;
+  height: 160px;
+}
+
+.box-padding-sides {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.box-padding-top {
+  padding-top: 10px;
 }
 
 .bg-gry {
@@ -527,28 +549,12 @@ hr {
     opacity: .8;
 }
 
-@media screen and (min-width: 768px) {
-    .main-content h1 {
-        display: none;
-  }
-    .main-content h5 {
-        display: none;
-  }
-}
-
 @media screen and (max-width: 767px) {
     .main-content h1 {
-
     }
     .main-content h5 {
         margin:0 0 10px 0;
     }
-    .cover-img h1 {
-        display: none;
-  }
-    .cover-img h5 {
-        display: none;
-  }
 }
 
 /*----MAIN CONTENT----*/
@@ -632,7 +638,8 @@ hr {
 }
 
 .profile {
-    margin: 20px 0;
+    margin-bottom: 0px;
+    margin-top: 10px;
     clear:both;
 }
 
@@ -658,7 +665,7 @@ hr {
   .profile img {
         float: left;
         margin-right: 15px;
-        width: 100px;
+        width: 90%;
   }
 }
 
@@ -752,9 +759,29 @@ hr {
     text-align: center;
 }
 
+.profile-right-col {
+    font-size: 13px;
+}
+
 .profile-stats {
-    float:right;
-    margin-left:15px;
+    /* float:right; */
+    /* margin-left:15px; */
+    color: #888;
+}
+
+.profile-right-col ul {
+    list-style: none;
+}
+
+.profile-right-col li {
+    color: #777;
+    font-size: 1em;
+    margin-bottom: 6px;
+    background: #FAFAFA;
+    border: 1px solid #CFCFCF;
+    border-radius: 3px;
+    padding: 2px 5px;
+    width: 70%;
 }
 
 .group {
@@ -796,15 +823,15 @@ hr {
     width: 80px;
     height: 34px;
     line-height: 31px;
-    float: right;
+    /* float: right; */
     margin-top: 2px;
-    margin-left: 20px;
+    /* margin-left: 20px; */
     text-align: center;
     color: #a0a0a0;
     font-size: 24px;
     cursor: pointer;
     border: 1px solid #a0a0a0;
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .profile-multimedia i {
@@ -820,6 +847,23 @@ hr {
     .profile-summary {
         overflow:auto;
     }
+}
+
+.profile-list {
+   font-size: 12px;
+   color: #666;
+}
+
+.profile-list table {
+   width: 100%;
+}
+
+.profile-list td {
+   border-bottom: 1px solid #ccc;
+}
+
+.profile-list td:first-child {
+   width: 30%;
 }
 
 @media (min-width:768px) {
@@ -838,13 +882,14 @@ hr {
   }
 }
 
-.profile-social {
-    float:right;
+.profile-right-col i {
+    font-size: 1.4em;
 }
 
-.profile-social i {
-    font-size: 24px;
-    margin-left: 5px;
+.profile-social-icons i {
+  margin-right: 15px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .person-status {
