@@ -128,6 +128,10 @@ hr {
   background-color: #949494 !important;
 }
 
+.nav a {
+    color: #ddd;
+}
+
 .navbar {
     min-height:50px;
     border-radius:0;
@@ -136,7 +140,8 @@ hr {
 }
 
 .navbar-nav {
-    margin:0;
+    margin: 0;
+    background: #44454C;
 }
 
 .ev-navbar-full-width {
@@ -344,7 +349,12 @@ hr {
 }
 
 .navbar-toggle {
-    margin-right:0;
+    margin-right: 0;
+    border: 1px solid #ddd;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #ddd;
 }
 
 .dropdown-menu {
@@ -592,12 +602,7 @@ hr {
     border-right:1px solid #aaa;
 }
 
-.main-sort-by {
-    margin:0 0 20px 0;
-}
-
 .onpage-nav {
-    margin-bottom:-10px;
 }
 
 .groups-search {
@@ -839,13 +844,14 @@ hr {
 }
 
 .profile-summary {
-    font-size:12px;
-    max-width:550px;
+    font-size: 12px;
+    max-width: 550px;
+    margin-bottom: 10px;
 }
 
 @media (max-width:767px) {
     .profile-summary {
-        overflow:auto;
+        overflow: auto;
     }
 }
 
