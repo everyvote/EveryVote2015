@@ -621,6 +621,10 @@ hr {
     text-decoration: none;
 }
 
+.profile-picture img {
+    margin-bottom: 10px;
+}
+
 .profile-folder-bar {
     width:100%;
     border-bottom: 1px dotted #A0A0A0;
@@ -668,7 +672,7 @@ hr {
   .profile img {
         float: left;
         margin-right: 15px;
-        width: 54px;
+        width: 100px;
   }
 }
 
@@ -712,6 +716,7 @@ hr {
 
 .profile-subtitle {
     overflow:hidden;
+    margin-bottom: 5px;
 }
 
 @media (min-width:768px) {
@@ -885,8 +890,12 @@ hr {
    width: 100%;
 }
 
-.profile-list td {
+.profile-list tr {
    border-bottom: 1px solid #ccc;
+}
+
+.profile-list tr:last-child {
+    border: none;
 }
 
 .profile-list td:first-child {
