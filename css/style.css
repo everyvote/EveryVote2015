@@ -112,12 +112,18 @@ hr {
 .bg-lt-gry {
   background-color: #F4F5F5 !important;
   border: 1px solid #e7e7e7;
-  height: 160px;
 }
 
 .box-padding-sides {
   padding-left: 10px;
   padding-right: 10px;
+}
+
+@media (max-width:767px) {
+    .box-padding-sides {
+      padding-left: 0;
+      padding-right: 0;
+    }
 }
 
 .box-padding-top {
@@ -766,6 +772,19 @@ hr {
 
 .profile-right-col {
     font-size: 13px;
+    max-height: 133px;
+}
+
+@media (max-width:767px) {
+    .profile-right-col {
+        padding: 0 10px
+    }
+}
+
+@media (min-width:768px) and (max-width:795px) {
+    .profile-right-col {
+        max-height: none;
+    }
 }
 
 .profile-stats {
@@ -786,7 +805,7 @@ hr {
     border: 1px solid #CFCFCF;
     border-radius: 3px;
     padding: 2px 5px;
-    width: 70%;
+    width: 117px;
 }
 
 .group {
@@ -851,13 +870,15 @@ hr {
 
 @media (max-width:767px) {
     .profile-summary {
-        overflow: auto;
+        /* overflow: auto; */
+        display: none;
     }
 }
 
 .profile-list {
    font-size: 12px;
    color: #666;
+   margin-bottom: 10px;
 }
 
 .profile-list table {
@@ -896,6 +917,10 @@ hr {
   margin-right: 15px;
   margin-bottom: 10px;
   margin-top: 10px;
+}
+
+.profile-social-icons i:last-child {
+    margin-right: 0px;
 }
 
 .person-status {
@@ -1004,7 +1029,6 @@ hr {
 
 .sidebar-profile-picture img {
     width:38px;
-    border-radius:3px;
 }
 
 .sidebar-profile-text-wrapper {
