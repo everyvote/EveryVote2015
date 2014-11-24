@@ -178,11 +178,11 @@ hr {
 }
 
 #xs-navbar-show-search {
-  float:right;
-  font-size:34px;
-  margin:0 30px 0 0;
-  color:#ddd;
-  cursor:pointer;
+    float: right;
+    font-size: 28px;
+    margin: 5px 20px 0 0;
+    color: #ddd;
+    cursor: pointer;
 }
 
 @media (max-width:767px) {
@@ -212,15 +212,26 @@ hr {
     list-style:none !important;
 }
 
+.ev-nav-group li ul li {
+    margin: 10px 0;
+}
+
+.ev-nav-group hr {
+    border-top: 1px solid #656565;
+}
+
+.ev-nav-group ul {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
 .ev-nav-group li ul {
     position:absolute;
     display:none;
     top:50px;
-    background-color:#676767;
+    background: #44454C;
     padding:0 15px;
     margin-left:-15px;
-    border-right:1px solid #888;
-    border-bottom:1px solid #888;
     z-index:999999999;
 }
 
@@ -237,11 +248,12 @@ hr {
 }
 
 .ev-nav-group-img img {
-    width:42px;
-    height:42px;
-    border-radius:2px;
-    margin-right:12px;
-    background-color:white;
+    width: 40px;
+    height: 40px;
+    border-radius: 2px;
+    margin-right: 12px;
+    margin-top: 1px;
+    background-color: white;
 }
 
 .ev-nav-group-text {
@@ -251,7 +263,7 @@ hr {
     text-shadow: 1px 1px rgba(0,0,0,.4);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    line-height:40px;
+    line-height:46px;
 }
 
 .ev-nav-group a {
@@ -361,14 +373,6 @@ hr {
 
 .navbar-toggle .icon-bar {
     background-color: #ddd;
-}
-
-.dropdown-menu {
-    background-color: #4b4b4b;
-}
-
-.dropdown-menu .divider {
-    background-color:#888;
 }
 
 .more-dropdown-menu {
@@ -496,6 +500,11 @@ hr {
 .dropdown-menu {
     margin: 0;
     border-radius: 0px;
+    background-color: #2A2B2F;
+}
+
+.dropdown-menu .divider {
+    background-color:#888;
 }
 
 .dropdown-menu li {
@@ -609,6 +618,11 @@ hr {
 }
 
 .onpage-nav {
+}
+
+.onpage-nav hr {
+    border-top: 1px solid #ccc;
+    margin-bottom: 20px;
 }
 
 .groups-search {
@@ -919,7 +933,7 @@ hr {
 }
 
 .profile-right-col i {
-    font-size: 1.4em;
+    font-size: 17px;
 }
 
 .profile-social-icons i {
@@ -932,21 +946,33 @@ hr {
     margin-right: 0px;
 }
 
-.person-status {
+.profile-page-title {
     float:left;
     font-family:"Lora", sans-serif;
     font-size:22px;
     font-weight:700;
 }
 
-.profile-nav {
+.profile-page-status {
+    clear: both;
+    font-size: 18px;
+    font-style: italic;
+}
+
+.profile-page-nav-buttons {
     float:right;
     margin:3px 0 0 0;
 }
 
-.profile-nav a {
+.profile-page-nav-buttons a {
     color:#333;
     text-decoration:none;
+}
+
+.profile-page-nav hr {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-top: 1px solid #ccc;
 }
 
 .sidebar-dropdown-background {

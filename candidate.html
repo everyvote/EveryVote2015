@@ -22,6 +22,7 @@
 
   </head>
   <body>
+
   <div class="ev-navbar-full-width bg-dk-gry-gradient"> <!-- grey background full width behind navbar -->
     <nav class="navbar ev-navbar-container" role="navigation"> <!-- keeps content centered at 1080px width -->
       <!-- Brand and toggle get grouped for better mobile display -->
@@ -39,12 +40,25 @@
           <input type="text" style="display:none" id="xs-navbar-search" class="form-control" placeholder="Search">
         </div>
         <ul class="ev-nav-group" id="ev-nav-group">
-          <li><a class="ev-nav-group-img"><img src="img/niu-huskies.jpg" /></a>
-              <a class="ev-nav-group-text"> Student Association <i class="fa fa-caret-down"></i></a>
-              <ul>
-                  <li><a href="#" class="ev-nav-group-img"><img src="img/niu-logo.png" /></a>
-                  <a href="#" class="ev-nav-group-text"> Northern Illinois University</a></li>
-              </ul>
+          <li>
+            <a class="ev-nav-group-img">
+              <img src="img/niu-huskies.jpg" />
+            </a>
+            <a class="ev-nav-group-text">
+              Student Association <i class="fa fa-caret-down"></i>
+            </a>
+            <ul>
+              <hr>
+              <li>
+                <a href="#" class="ev-nav-group-img">
+                  <img src="img/niu-logo.png" />
+                </a>
+                <a href="#" class="ev-nav-group-text">
+                  Northern Illinois University
+                </a>
+              </li>
+              <div class="clearfix"></div>
+            </ul>
           </li>
         </ul>
       </div>
@@ -152,23 +166,28 @@
               <h5>NIU > Student Association</h5>
               <h1>Fall 2014 Session</h1>
             </div>
-            <div class="onpage-nav">
-              <div class="person-status">
+            <div class="profile-page-nav">
+              <div class="profile-page-title">
                 Candidate
               </div>
-              <div class="profile-nav">
+              <div class="profile-page-nav-buttons">
                 <a href="#">< prev</a>
                 &nbsp &nbsp
                 <a href="#">next ></a>
               </div>
+              <div class="profile-page-status">
+                Running for President
+              </div>
               <div class="clearfix"></div>
+              <hr>
             </div>
             <div class="profile clearfix">
               <div class="profile-row-first">
                 <div class="col-sm-2">
-                  <a href="candidate.html">
+                  <a class="profile-picture" href="candidate.html">
                     <img src="img/sojourner-truth.jpg" />
                   </a>
+                  <div class="clearfix"></div>
                 </div><!-- /.col-sm-2 -->
                 <div class="col-sm-7">
                   <div class="box-padding-sides">
@@ -210,7 +229,7 @@
                       <i class="fa fa-facebook"></i>
                       <i class="fa fa-twitter"></i>
                       <i class="fa fa-linkedin"></i>
-                      <i class="fa fa-pinterest"></i>
+                      <i class="fa fa-ellipsis-h"></i>
                     </div>
                     <p>Save Candidate</p>
                     <ul>
@@ -219,7 +238,6 @@
                     </ul>
                   </div>
                 </div><!-- /.col-sm-3 -->
-                <hr>
               </div><!-- /.profile-row-first -->
             </div><!-- /.profile clearfix -->
           </div><!-- /.main-content -->
