@@ -52,6 +52,13 @@ h6 {
     margin-bottom: 4px;
 }
 
+h7 {
+  text-transform: uppercase;
+  color: #666;
+  letter-spacing: .06em;
+  font-weight: 500;
+}
+
 .more {
   color: #ff0000;
 }
@@ -721,7 +728,7 @@ hr {
 }
 
 .profile-row-first {
-    clear: both;
+    clear: both;    
 }
 
 .profile-row {
@@ -851,9 +858,9 @@ hr {
     clear:both;
 }
 
-.group:nth-child(odd) {
+/*.group:nth-child(odd) {
     background-color: #F2F2F2;
-}
+}/*
 
 .profile-multimedia-first {
     width: 80px;
