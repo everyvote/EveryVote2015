@@ -12,10 +12,11 @@ h1 {
 }
 
 h2 {
-    font-family: 'Lora', sans-serif;
-    font-size: 23px;
-    letter-spacing: .01em;
-    font-weight: 700 !important;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    font-weight: 800 !important;
     margin-top: 0 !important;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1124,4 +1125,26 @@ hr {
     min-height: 1px;
     padding-right: 0;
     padding-left: 0;
+}
+
+.center-icon {
+  text-align: center;
+  border-left: 1px solid #aaa;
+  border-right: 1px solid #aaa;
+  display: table;
+  font-size: 30px;
+  padding-top: 30px;
+  padding-left: 36px;
+   padding-bottom: 30px;
+   padding-right: 36px;
+
+}
+
+.center-icon .fa {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.candidate-text {
+  padding-right: 10px;
 }
